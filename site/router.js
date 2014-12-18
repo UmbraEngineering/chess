@@ -1,5 +1,5 @@
 
-var WelcomeView = require('views/welcome');
+var WelcomeView = require('views/welcome/welcome');
 
 // 
 // Define the app router
@@ -21,8 +21,10 @@ var router = module.exports = {
 
 		var view = new WelcomeView();
 
+		view.draw();
+
 		this.main
-			.appendChild(view.draw());
+			.appendChild(view.elem);
 	},
 
 	// 

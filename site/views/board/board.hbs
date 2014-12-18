@@ -1,0 +1,9 @@
+<table>
+	{{#each ranks}}
+	<tr data-rank="{{ this }}">
+		{{#each ../files}}
+		<td data-rank="{{ ../this }}" data-file="{{ this }}" data-square="{{ this }}{{ ../this }}"></td>
+		{{/each}}
+	</tr>
+	{{/each}}
+</table>

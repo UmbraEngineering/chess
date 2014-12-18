@@ -7,11 +7,11 @@ var streamify   = require('gulp-streamify');
 
 gulp.task('browserify', function() {
 	return browserify({
-		paths: ['./site/js/lib', './site/js/common', './site/vendor', './site/js'],
-		entries: ['./site/js/main.js']
+		paths: ['./site/lib', './site/common', './site/vendor', './site'],
+		entries: ['./site/main.js']
 	})
 		.bundle()
 		.pipe(source('bundle.js'))
 		.pipe(streamify(es3ify()))
-		.pipe(gulp.dest('site/build/js'));
+		.pipe(gulp.dest('site/build'));
 });
