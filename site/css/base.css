@@ -1,0 +1,43 @@
+
+* {
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	overflow: hidden;
+	background: #fff;
+}
+
+	body.wood-theme {
+		background: url('/assets/background-wood.jpg') no-repeat center center fixed;
+		background-size: cover;
+	}
+
+	body.cork-theme {
+		background: url('/assets/background-cork.jpg') no-repeat center center fixed;
+		background-size: cover;
+	}
+
+#wrapper {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	overflow: hidden;
+}
+
+#wrapper > main {
+	width: 100%;
+	max-width: 1280px;
+	margin: auto;
+}
+
